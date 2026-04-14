@@ -6,18 +6,18 @@ Trabalho da disciplina de Padrões de Projeto.
 Builder
 
 ## Descrição
-O sistema cria boletos bancários utilizando o padrão Builder, separando a construção do objeto da sua representação.
+Sistema que cria boletos de diferentes bancos (Itaú, Nubank e Bradesco) utilizando o padrão Builder.
 
 ## Estrutura
-- Boleto (Produto)
-- BoletoBuilder (Builder)
-- BoletoItauBuilder (Builder concreto)
-- Diretor
+- Produto: Boleto
+- Builder: BoletoBuilder
+- Builders concretos:
+  - BoletoItauBuilder
+  - BoletoNubankBuilder
+  - BoletoBradescoBuilder
+- Diretor: Diretor
 
 ## Execução
 Executar a classe Main.java
-
-## Autor
-GUSTAVO SANTANA
 
 ## EU TENTEI KKK
