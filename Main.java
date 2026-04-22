@@ -7,12 +7,12 @@ public class Main {
         diretor.construir(itau);
         itau.getBoleto().mostrarBoleto();
 
-        BoletoBuilder nubank = new BoletoNubankBuilder();
-        diretor.construir(nubank);
-        nubank.getBoleto().mostrarBoleto();
-
         BoletoBuilder bradesco = new BoletoBradescoBuilder();
         diretor.construir(bradesco);
         bradesco.getBoleto().mostrarBoleto();
+
+        BoletoBuilder bb = new BoletoBancoBrasilBuilder();
+        diretor.construir(bb);
+        bb.getBoleto().mostrarBoleto();
     }
 }
